@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SCoreKit_Example', :exclusive => true do
+  pod "SCoreKit", :path => "../"
+end
+
+target 'SCoreKit_Tests', :exclusive => true do
+  pod "SCoreKit", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end

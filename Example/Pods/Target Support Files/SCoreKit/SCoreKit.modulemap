@@ -1,0 +1,6 @@
+framework module SCoreKit {
+  umbrella header "SCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

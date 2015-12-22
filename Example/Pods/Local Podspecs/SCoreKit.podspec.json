@@ -1,0 +1,25 @@
+{
+  "name": "SCoreKit",
+  "version": "0.1.0",
+  "summary": "A short description of SCoreKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SCoreKit",
+  "license": "MIT",
+  "authors": {
+    "linjiawei": "10126121@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SCoreKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "SToolsKit",
+      "source_files": "SToolsKit/**/*"
+    }
+  ]
+}

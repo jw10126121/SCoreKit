@@ -1,6 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+
+  pod 'SwiftUtils', '~> 1.0.25'
+ pod 'RandomColorSwift', '~> 0.1.0'
+pod 'UIColorRGBA', '~> 0.2'
+
 target 'SCoreKit_Example', :exclusive => true do
   pod "SCoreKit", :path => "../"
 end

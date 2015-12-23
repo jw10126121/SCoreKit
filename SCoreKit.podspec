@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SCoreKit"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SCoreKit."
+  s.summary          = "swift 开发工具包"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        swift 开发工具包
+                        swift 开发工具包，方便开发
                        DESC
 
   s.homepage         = "https://github.com/jw10126121/SCoreKit"
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-    #s.source_files = 'Pod/Classes/**/*'
+#s.source_files = 'Pod/Classes/**/*'
 #s.resource_bundles = {
 #   'SCoreKit' => ['Pod/Assets/*.png']
 # }
@@ -39,9 +39,23 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-    s.subspec 'SToolsKit' do |sToolsKit|
-        sToolsKit.source_files = 'SToolsKit/**/*.{swift}'
-    end
+s.subspec 'SQrCodeScanningKit' do |s|
+    s.source_files = 'SQrCodeScanningKit/**/*.{swift}'
+    s.dependency 'SnapKit', '~> 0.18.0'
+    s.resource_bundles = {
+        'SQrCodeScanningKit' => ['SQrCodeScanningKit/Resources/**/*']
+    }
+end
+
+s.subspec 'SToolsKit' do |sToolsKit|
+    sToolsKit.source_files = 'SToolsKit/**/*.{swift}'
+end
+
+s.subspec 'SAuthorityManager' do |s|
+    s.source_files = 'SAuthorityManager/**/*.{swift}'
+end
+
+
 
 
 

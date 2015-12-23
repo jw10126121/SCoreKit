@@ -1,18 +1,18 @@
 PODS:
-  - FBSnapshotTestCase (2.0.7):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
-  - FBSnapshotTestCase/Core (2.0.7)
-  - FBSnapshotTestCase/SwiftSupport (2.0.7):
-    - FBSnapshotTestCase/Core
   - RandomColorSwift (0.1.0)
   - SCoreKit (0.1.0):
+    - SCoreKit/SAuthorityManager (= 0.1.0)
+    - SCoreKit/SQrCodeScanningKit (= 0.1.0)
     - SCoreKit/SToolsKit (= 0.1.0)
+  - SCoreKit/SAuthorityManager (0.1.0)
+  - SCoreKit/SQrCodeScanningKit (0.1.0):
+    - SnapKit (~> 0.18.0)
   - SCoreKit/SToolsKit (0.1.0)
+  - SnapKit (0.18.0)
   - SwiftUtils (1.0.25)
   - UIColorRGBA (0.2)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - RandomColorSwift (~> 0.1.0)
   - SCoreKit (from `../`)
   - SwiftUtils (~> 1.0.25)
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
   RandomColorSwift: b2e95d6d3670def6d2f907ec7b7041138b268ac9
-  SCoreKit: a8c5bfee904246f38ac7b050c90f342613c52c9d
+  SCoreKit: 3a2495b6620dfb90a1475553568940b511268e0d
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
   SwiftUtils: 59d12f8a357ee0a333d626956806e4b0d522bd38
   UIColorRGBA: 6b67b62dde035b497f2e8a211087764437c9a557
 

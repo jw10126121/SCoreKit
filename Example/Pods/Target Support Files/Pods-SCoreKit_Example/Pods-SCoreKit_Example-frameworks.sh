@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SCoreKit_Example/SCoreKit.framework"
+  install_framework "Pods-SCoreKit_Example/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SCoreKit_Example/SCoreKit.framework"
+  install_framework "Pods-SCoreKit_Example/SnapKit.framework"
 fi

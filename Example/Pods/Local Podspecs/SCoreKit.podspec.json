@@ -1,15 +1,15 @@
 {
   "name": "SCoreKit",
   "version": "0.1.0",
-  "summary": "A short description of SCoreKit.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SCoreKit",
+  "summary": "swift 开发工具包",
+  "description": "swift 开发工具包，方便开发",
+  "homepage": "https://github.com/jw10126121/SCoreKit",
   "license": "MIT",
   "authors": {
     "linjiawei": "10126121@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SCoreKit.git",
+    "git": "https://github.com/jw10126121/SCoreKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -18,8 +18,26 @@
   "requires_arc": true,
   "subspecs": [
     {
+      "name": "SQrCodeScanningKit",
+      "source_files": "SQrCodeScanningKit/**/*.{swift}",
+      "dependencies": {
+        "SnapKit": [
+          "~> 0.18.0"
+        ]
+      },
+      "resource_bundles": {
+        "SQrCodeScanningKit": [
+          "SQrCodeScanningKit/Resources/**/*"
+        ]
+      }
+    },
+    {
       "name": "SToolsKit",
-      "source_files": "SToolsKit/**/*"
+      "source_files": "SToolsKit/**/*.{swift}"
+    },
+    {
+      "name": "SAuthorityManager",
+      "source_files": "SAuthorityManager/**/*.{swift}"
     }
   ]
 }
